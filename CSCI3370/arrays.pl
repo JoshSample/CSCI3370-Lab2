@@ -20,3 +20,19 @@ for (my $b = 0; $b < $len / 2; $b = $b + 1) {
         print ": I have a massive sweet tooth and cookies are my favorite sweet\n";
     }
 }
+
+# Move last element of array to first
+my $temp = $dislikefoods[$len-1];
+for (my $b = $len-1; $b >= 0; $b = $b - 1) {
+    $dislikefoods[$b+1] = $dislikefoods[$b];
+}
+$dislikefoods[0] = $temp;
+$dislikefoods[$len] = "";
+
+# Printing out first and last elements of each array
+print "First and last elements of 1st array: ";
+print "$likefoods[0], ";
+print "$likefoods[$len-1]\n";
+print "First and last elements of 2nd array: ";
+print "$dislikefoods[0], ";
+print "$dislikefoods[$len-1]\n";
