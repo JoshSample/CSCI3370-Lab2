@@ -21,7 +21,7 @@ print "What's the current temperature? ";
 my $temp = readline STDIN;
 
 # Print inputs
-chomp ($fname);
+chomp($fname);
 print "\nYour first name: ", $fname, "\n";
 print "Your last name: ", $lname;
 print "Your home town: ", $town;
